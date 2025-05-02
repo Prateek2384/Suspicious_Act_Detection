@@ -1,0 +1,193 @@
+/* General Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Arial", sans-serif;
+}
+
+.landing-page {
+  background-color: #000;
+  color: #d4d4d4;
+  text-align: center;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+  background: rgba(0, 50, 0, 0.9);
+  box-shadow: 0 2px 10px rgba(0, 255, 0, 0.2);
+}
+
+.logo {
+  font-size: 18px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  background-color: #0f0;
+  border-radius: 50%;
+  margin-right: 8px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links li {
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.nav-links li:hover {
+  color: #0f0;
+}
+
+/* Hero Section */
+.hero-section {
+  padding: 80px 20px;
+  max-width: 800px;
+  margin: auto;
+}
+
+.hero-section h1 {
+  font-size: 36px;
+  font-weight: bold;
+}
+
+.hero-section p {
+  margin-top: 10px;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+/* Buttons */
+.button-container {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 30px;
+}
+
+.btn {
+  background: rgba(0, 50, 0, 0.9);
+  border: 2px solid #0f0;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
+  color: #0f0;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.btn:hover {
+  background: rgba(0, 100, 0, 0.9);
+  transform: scale(1.05);
+}
+
+.upload-btn input {
+  display: none;
+}
+
+/* Features Section */
+.features-section {
+  padding: 50px 20px;
+  max-width: 900px;
+  margin: auto;
+}
+
+.features-section h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.features {
+  display: flex;
+  justify-content: space-around;
+  text-align: left;
+  gap: 20px;
+}
+
+.feature {
+  max-width: 280px;
+}
+
+.feature h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #0f0;
+}
+
+.feature p {
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+/* Footer */
+.footer {
+  background: rgba(0, 50, 0, 0.9);
+  padding: 15px;
+  text-align: center;
+  margin-top: 40px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer p {
+  font-size: 14px;
+}
+
+.footer-links {
+  display: flex;
+  gap: 20px;
+}
+
+.footer-links span {
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.footer-links span:hover {
+  color: #0f0;
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+  .nav-links {
+    display: none;
+  }
+
+  .hero-section {
+    padding: 40px 20px;
+  }
+
+  .button-container {
+    flex-direction: column;
+  }
+
+  .btn {
+    width: 100%;
+  }
+
+  .features {
+    flex-direction: column;
+    align-items: center;
+  }
+}
